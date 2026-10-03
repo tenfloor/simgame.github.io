@@ -1,0 +1,72 @@
+# 수행 실적 ─ 새 실적은 아래 형식으로 한 덩어리를 추가하면 됩니다.
+#   category: defense(방산) 또는 aviation(항공·공항)
+#   home: true 이면 홈 화면에도 표시됩니다.
+#   specs: 카드 아래쪽 "항목 / 내용" 표 (원하는 만큼 추가 가능)
+
+- category: defense
+  home: true
+  client: LIG D&A
+  title: 유도로켓 교전모의기
+  desc: 유도로켓 체계의 표적 획득부터 발사, 비행, 명중 판정까지 교전 전 과정을 모의하는 훈련 장비 개발.
+  specs:
+    - [구분, 교전모의기 개발]
+    - [체계, 유도로켓]
+
+- category: defense
+  home: true
+  client: 한화에어로스페이스
+  title: 차륜형 대공포 교전모의기
+  desc: 차륜형 대공포의 공중 표적 탐지·추적과 사격 절차를 모의하는 3D 영상 개발.
+  specs:
+    - [구분, 교전모의기 개발]
+    - [체계, 차륜형 대공포]
+
+- category: defense
+  client: LIG D&A
+  title: 방공미사일 레이다 ASTERIX 연동
+  desc: 방공미사일 레이다 표적 정보를 국제 표준 감시데이터 형식인 ASTERIX로 송수신하는 연동 기능 개발.
+  specs:
+    - [구분, 교전모의기 레이다 연동 개발]
+    - [체계, 방공미사일]
+
+- category: defense
+  client: 육군방공학교
+  title: 벌컨포 교전모의기
+  desc: 벌컨 대공포의 표적 포착과 사격 절차를 가상 환경에서 모의해 방공 사수와 운용요원의 교육 훈련을 지원하는 교전모의기 개발.
+  specs:
+    - [구분, 교전모의기 개발]
+    - [체계, 벌컨 대공포]
+
+- category: aviation
+  home: true
+  client: 한화시스템
+  title: UAM 비행궤적(Trajectory) 모의
+  desc: 도심항공교통(UAM) 기체의 이착륙과 운항 경로를 모의해 비행궤적을 생성하고 분석하는 시뮬레이션 개발.
+  specs:
+    - [구분, 비행궤적 모의]
+    - [분야, UAM 도심항공교통]
+
+- category: aviation
+  client: 항공안전기술원 (KIAST)
+  title: 드론 시뮬레이터
+  desc: 드론 시험비행장에서 사용하는 비행 시험과 조종 훈련을 가상 환경에서 수행할 수 있게 하는 드론 모의기 개발.
+  specs:
+    - [구분, 비행 모의기 개발]
+    - [설치, 영월 · 보은 · 고성 · 화성 · 인천(청라) 드론시험비행장]
+
+- category: aviation
+  client: 서울지방항공청
+  title: 비행 및 운항정보 시스템 이중화 구축
+  desc: FOIS/SLOT/UBIKAIS/GD/ONESTOP 등 비행 및 운항 정보 관리 시스템을 T1, T2에 이중화 구축.
+  specs:
+    - [구분, 정보 시스템 개발]
+    - [분야, 항공 운항]
+
+- category: aviation
+  home: true
+  client: 인천국제공항공사
+  title: 스마트패스 시스템
+  desc: 인천공항 안면인식 스마트패스 여객 및 일반 여객처리 백엔드와 운영관리 시스템 개발.
+  specs:
+    - [구분, 백엔드 여객처리 · 운영관리 시스템 개발]
+    - [분야, 공항 여객처리]

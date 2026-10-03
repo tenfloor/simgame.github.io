@@ -1,0 +1,14 @@
+# 사이트 기본 설정 ─ 수정 후 GitHub에 올리면 1~2분 뒤 반영됩니다.
+title: 심게임 SimGame
+description: 심게임은 교전모의기, 드론·UAM 비행 모의기, 항공 정보 시스템을 개발하는 방산·항공 시뮬레이션 전문 기업입니다.
+lang: ko
+
+# 주소: 사용자명.github.io 저장소면 baseurl은 "" 그대로 둡니다.
+# 회사 도메인(simgame.co.kr)을 연결하면 url만 바꾸면 됩니다.
+url: "https://simgame.github.io"
+baseurl: ""
+
+markdown: kramdown
+exclude:
+  - README.md
+  - _scope_orig.html

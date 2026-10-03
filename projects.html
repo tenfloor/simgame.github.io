@@ -1,0 +1,31 @@
+---
+layout: default
+title: 수행 실적
+permalink: /projects/
+description: 심게임 수행 실적 ─ 방산 교전모의기, 드론·UAM 비행 모의, 항공 운항정보 및 공항 여객처리 시스템.
+---
+{% include page-hero.html label="Projects" title="수행 실적" desc="국내 방산 체계업체, 군 교육기관, 항공·공항 분야 기관과 함께 교전모의기, 드론·UAM 비행 시뮬레이션, 운항정보 및 공항 시스템을 개발했습니다." %}
+
+{%- assign groups = "defense:방산,aviation:항공 · 공항" | split: "," %}
+{%- for g in groups %}
+{%- assign key = g | split: ":" | first %}
+{%- assign label = g | split: ":" | last %}
+{%- assign items = site.data.projects | where: "category", key %}
+{%- if items.size > 0 %}
+<section>
+  <div class="group-head">
+    <h2>{{ label }}</h2>
+    <span class="count mono">{{ items.size }}건</span>
+  </div>
+  <div class="refs">
+    {%- for p in items %}
+    {% include project-card.html p=p %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+{%- endfor %}
+
+<section>
+  {% include cta.html %}
+</section>

@@ -1,0 +1,9 @@
+# 상단 메뉴(GNB) ─ 순서대로 표시됩니다.
+- title: 사업 분야
+  url: /business/
+- title: 수행 실적
+  url: /projects/
+- title: 제품/솔루션
+  url: /products/
+- title: 오시는 길
+  url: /contact/

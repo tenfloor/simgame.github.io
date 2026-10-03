@@ -1,0 +1,75 @@
+---
+layout: default
+---
+{%- assign c = site.data.company -%}
+<div class="hero-band">
+  <div class="hero">
+    <div>
+      <p class="eyebrow">{{ c.eyebrow }}</p>
+      <h1>{{ c.tagline }}</h1>
+      <p class="lead">{{ c.lead }}</p>
+      <div class="btns">
+        <a class="btn primary" href="{{ '/contact/' | relative_url }}">사업 문의</a>
+        <a class="btn" href="{{ '/projects/' | relative_url }}">수행 실적 보기</a>
+      </div>
+      <div class="clock mono" aria-label="현재 시각">
+        <span>UTC <b id="utc">—</b></span>
+        <span>GPS WEEK <b id="gpsw">—</b></span>
+        <span>TOW <b id="tow">—</b> s</span>
+      </div>
+    </div>
+    {% include scope.html %}
+  </div>
+</div>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-label">Business</div>
+    <div>
+      <h2>사업 분야</h2>
+      <p>무기체계와 항공기의 운용 절차, 장비 인터페이스를 분석해 현장에서 바로 쓸 수 있는 모의기와 운영 시스템을 개발합니다.</p>
+    </div>
+  </div>
+  <div class="areas">
+    {%- for a in site.data.business %}
+    {% include area-card.html area=a %}
+    {%- endfor %}
+  </div>
+  <p class="more"><a href="{{ '/business/' | relative_url }}">사업 분야와 개발 절차 자세히 보기 →</a></p>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-label">Projects</div>
+    <div>
+      <h2>주요 수행 실적</h2>
+      <p>국내 방산 체계업체, 군 교육기관, 항공·공항 분야 기관과 함께 개발했습니다.</p>
+    </div>
+  </div>
+  <div class="refs">
+    {%- assign featured = site.data.projects | where: "home", true %}
+    {%- for p in featured %}
+    {% include project-card.html p=p %}
+    {%- endfor %}
+  </div>
+  <p class="more"><a href="{{ '/projects/' | relative_url }}">전체 실적 {{ site.data.projects | size }}건 보기 →</a></p>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-label">Products</div>
+    <div>
+      <h2>제품/솔루션</h2>
+      <p>프로젝트에 적용되어 기능이 검증된 프로그램과 라이브러리를 솔루션으로 제공합니다.</p>
+    </div>
+  </div>
+  <ul class="products">
+    {%- for p in site.data.products %}
+    {% include product-row.html p=p %}
+    {%- endfor %}
+  </ul>
+</section>
+
+<section>
+  {% include cta.html %}
+</section>

@@ -1,0 +1,12 @@
+<article class="ref">
+  <span class="client">{{ include.p.client }}</span>
+  <h3>{{ include.p.title }}</h3>
+  <p>{{ include.p.desc }}</p>
+  {%- if include.p.specs %}
+  <dl>
+    {%- for s in include.p.specs %}
+    <dt>{{ s[0] }}</dt><dd>{{ s[1] }}</dd>
+    {%- endfor %}
+  </dl>
+  {%- endif %}
+</article>

@@ -1,0 +1,5 @@
+<li class="product">
+  <span class="name">{{ include.p.name }}</span>
+  <div><h3>{{ include.p.title }}</h3><p>{{ include.p.desc }}</p></div>
+  <div class="chips">{% for t in include.p.platforms %}<span class="chip">{{ t }}</span>{% endfor %}</div>
+</li>

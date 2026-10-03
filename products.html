@@ -1,0 +1,19 @@
+---
+layout: default
+title: 제품/솔루션
+permalink: /products/
+description: 심게임 제품/솔루션 ─ simDrone, simURMap, simUDGrid, simVRecorder, simAsterix.
+---
+{% include page-hero.html label="Products" title="제품/솔루션" desc="프로젝트에 적용되어 기능이 검증된 프로그램과 라이브러리를 솔루션으로 제공합니다." %}
+
+<section>
+  <ul class="products">
+    {%- for p in site.data.products %}
+    {% include product-row.html p=p %}
+    {%- endfor %}
+  </ul>
+</section>
+
+<section>
+  {% include cta.html %}
+</section>
