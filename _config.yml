@@ -5,7 +5,7 @@ lang: ko
 
 # 주소: 사용자명.github.io 저장소면 baseurl은 "" 그대로 둡니다.
 # 회사 도메인(simgame.co.kr)을 연결하면 url만 바꾸면 됩니다.
-url: "https://simgame.github.io"
+url: "https://www.simgame.co.kr"
 baseurl: ""
 
 markdown: kramdown
