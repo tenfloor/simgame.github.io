@@ -25,3 +25,8 @@
   title: ASTERIX 라이브러리
   desc: 레이다 감시데이터 국제 표준인 ASTERIX 메시지를 인코딩·디코딩하는 라이브러리입니다.
   platforms: [C++, C#, Java]
+
+- name: simCAD3DViewer
+  title: CAD 3D Viewer
+  desc: STEP, IGS, AMF등 3D CAD 파일 뷰어 프로그램입니다
+  platforms: [Windows]
